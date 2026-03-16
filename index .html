@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四面八方 · 2026年3月17日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+:root{--bg:#fdf6f0;--accent:#d4637a;--accent-light:#f2c4ce;--accent-dark:#a8405a;--text:#3a2e2e;--text-light:#7a6b6b;--card-bg:#fff;--tag-bg:#fce8ec;--tag-text:#c25672;--green:#6bb38a;--blue:#5b9bd5;--gold:#d4a843;--orange:#e8945a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+.petal{position:fixed;width:12px;height:12px;pointer-events:none;z-index:9999;opacity:.7}
+.petal svg{width:100%;height:100%}
+@keyframes fall{0%{transform:translateY(-10vh) rotate(0deg) translateX(0);opacity:0}10%{opacity:.8}90%{opacity:.6}100%{transform:translateY(110vh) rotate(720deg) translateX(80px);opacity:0}}
+.petal:nth-child(1){left:5%;animation:fall 12s linear infinite;animation-delay:0s}
+.petal:nth-child(2){left:15%;animation:fall 15s linear infinite;animation-delay:2s;width:10px;height:10px}
+.petal:nth-child(3){left:28%;animation:fall 11s linear infinite;animation-delay:4s}
+.petal:nth-child(4){left:42%;animation:fall 14s linear infinite;animation-delay:1s;width:8px;height:8px}
+.petal:nth-child(5){left:55%;animation:fall 13s linear infinite;animation-delay:5s}
+.petal:nth-child(6){left:68%;animation:fall 16s linear infinite;animation-delay:3s;width:10px;height:10px}
+.petal:nth-child(7){left:78%;animation:fall 12s linear infinite;animation-delay:6s}
+.petal:nth-child(8){left:90%;animation:fall 14s linear infinite;animation-delay:2.5s;width:9px;height:9px}
+.header{position:relative;width:100%;min-height:320px;overflow:hidden;background:linear-gradient(135deg,#fce4ec 0%,#f8bbd0 30%,#f48fb1 60%,#f06292 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px 40px}
+.header-decor{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.header-title{font-family:'Noto Serif SC','Noto Serif CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',serif;font-size:52px;font-weight:900;color:#fff;text-shadow:0 4px 20px rgba(160,40,70,.3);letter-spacing:12px;position:relative;z-index:2;animation:fadeInDown 1s ease-out}
+.header-subtitle{font-family:'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-size:15px;color:rgba(255,255,255,.92);margin-top:16px;letter-spacing:2px;position:relative;z-index:2;text-align:center;line-height:1.6;animation:fadeInUp 1s ease-out .3s both}
+.header-weather{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.25);backdrop-filter:blur(8px);border-radius:20px;padding:6px 18px;margin-top:14px;font-size:13px;color:#fff;position:relative;z-index:2;animation:fadeInUp 1s ease-out .5s both}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.container{max-width:680px;margin:0 auto;padding:24px 16px 40px}
+.card{background:var(--card-bg);border-radius:16px;box-shadow:0 2px 20px rgba(180,120,140,.1);padding:28px 24px;margin-bottom:20px;opacity:0;transform:translateY(24px);animation:cardIn .6s ease-out forwards}
+.card:nth-child(1){animation-delay:.1s}.card:nth-child(2){animation-delay:.2s}.card:nth-child(3){animation-delay:.3s}.card:nth-child(4){animation-delay:.4s}.card:nth-child(5){animation-delay:.5s}.card:nth-child(6){animation-delay:.6s}.card:nth-child(7){animation-delay:.7s}.card:nth-child(8){animation-delay:.8s}
+@keyframes cardIn{to{opacity:1;transform:translateY(0)}}
+.card:hover{box-shadow:0 6px 30px rgba(180,120,140,.18);transform:translateY(-2px);transition:all .3s ease}
+.section-icon{font-size:24px;margin-right:8px}
+.section-label{font-family:'Noto Serif SC','Noto Serif CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',serif;font-size:13px;font-weight:600;color:var(--accent);letter-spacing:3px}
+.section-header{display:flex;align-items:center;margin-bottom:10px}
+.section-title{font-family:'Noto Serif SC','Noto Serif CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',serif;font-size:22px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.4}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tag{background:var(--tag-bg);color:var(--tag-text);font-size:12px;padding:3px 10px;border-radius:12px;font-weight:500}
+.card p{font-size:15px;color:var(--text);line-height:1.85;margin-bottom:10px}
+.source{font-size:12px;color:var(--text-light);margin-top:10px;padding-top:8px;border-top:1px dashed #eee}
+.svg-chart{width:100%;margin:16px 0;display:flex;justify-content:center}
+.svg-chart svg{max-width:100%;height:auto}
+.quote-card{background:linear-gradient(135deg,#fce4ec,#f8bbd0);border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:20px;opacity:0;transform:translateY(24px);animation:cardIn .6s ease-out .9s forwards}
+.quote-text{font-family:'Noto Serif SC','Noto Serif CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',serif;font-size:20px;font-weight:600;color:var(--accent-dark);line-height:1.8;margin-bottom:12px}
+.quote-author{font-size:14px;color:var(--accent)}
+.footer{text-align:center;padding:20px;font-size:13px;color:var(--text-light)}
+.activity-item{padding:10px 0;border-bottom:1px solid #f5eef0;font-size:14px}
+.activity-item:last-child{border-bottom:none}
+.activity-name{font-weight:500;color:var(--text)}
+.activity-meta{font-size:12px;color:var(--text-light);margin-top:2px}
+.activity-free{display:inline-block;background:#e8f5e9;color:#388e3c;font-size:11px;padding:1px 8px;border-radius:8px;font-weight:500}
+.activity-paid{display:inline-block;background:#fff3e0;color:#e65100;font-size:11px;padding:1px 8px;border-radius:8px;font-weight:500}
+.hot-item{display:flex;align-items:flex-start;gap:8px;padding:6px 0;font-size:14px}
+.hot-rank{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;font-size:12px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.hot-rank.r1{background:var(--accent)}.hot-rank.r2{background:var(--orange)}.hot-rank.r3{background:var(--gold)}.hot-rank.r4,.hot-rank.r5{background:#bbb}
+.hot-platform{font-size:11px;color:var(--text-light)}
+.sub-section{margin-top:16px;padding-top:14px;border-top:1px dashed #f0e0e4}
+.sub-title{font-family:'Noto Serif SC','Noto Serif CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',serif;font-size:16px;font-weight:600;color:var(--accent-dark);margin-bottom:8px}
+.save-btn{display:block;margin:10px auto 30px;padding:14px 36px;background:linear-gradient(135deg,#f48fb1,#d4637a);color:#fff;border:none;border-radius:28px;font-size:16px;font-family:'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-weight:500;cursor:pointer;box-shadow:0 4px 18px rgba(212,99,122,.35);transition:all .3s ease;letter-spacing:1px}
+.save-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(212,99,122,.45)}
+@media(max-width:520px){.header-title{font-size:38px;letter-spacing:8px}.header{min-height:260px;padding:50px 16px 30px}.card{padding:22px 18px}.section-title{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="9" ry="6" fill="#f8bbd0" transform="rotate(25 10 10)" opacity=".8"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="8" ry="5" fill="#f48fb1" transform="rotate(-15 10 10)" opacity=".7"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="9" ry="6" fill="#fce4ec" transform="rotate(40 10 10)" opacity=".9"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="7" ry="5" fill="#f8bbd0" transform="rotate(-30 10 10)" opacity=".7"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="9" ry="6" fill="#f48fb1" transform="rotate(10 10 10)" opacity=".8"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="8" ry="5" fill="#fce4ec" transform="rotate(-20 10 10)" opacity=".7"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="9" ry="6" fill="#f8bbd0" transform="rotate(35 10 10)" opacity=".8"/></svg></div>
+<div class="petal"><svg viewBox="0 0 20 20"><ellipse cx="10" cy="10" rx="7" ry="5" fill="#f48fb1" transform="rotate(-10 10 10)" opacity=".7"/></svg></div>
+
+<div class="header">
+<svg class="header-decor" viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+<path d="M0 280 Q100 220 200 260 Q300 200 400 240 Q500 190 600 230 Q700 200 800 250 L800 360 L0 360Z" fill="rgba(255,255,255,.12)"/>
+<path d="M0 300 Q150 250 300 280 Q450 240 600 270 Q700 250 800 280 L800 360 L0 360Z" fill="rgba(255,255,255,.08)"/>
+<g opacity=".6"><path d="M-20 80 Q60 90 120 60 Q160 45 200 55 Q230 62 260 50" stroke="#a8405a" stroke-width="3" fill="none" opacity=".5"/><path d="M120 60 Q130 30 150 20" stroke="#a8405a" stroke-width="2" fill="none" opacity=".4"/><path d="M200 55 Q210 30 220 25" stroke="#a8405a" stroke-width="2" fill="none" opacity=".4"/>
+<circle cx="120" cy="55" r="14" fill="#fff" opacity=".5"/><circle cx="125" cy="52" r="8" fill="#fce4ec" opacity=".7"/><circle cx="118" cy="58" r="6" fill="#f8bbd0" opacity=".6"/>
+<circle cx="150" cy="18" r="10" fill="#fff" opacity=".4"/><circle cx="152" cy="16" r="6" fill="#f8bbd0" opacity=".5"/>
+<circle cx="200" cy="50" r="12" fill="#fff" opacity=".45"/><circle cx="203" cy="47" r="7" fill="#fce4ec" opacity=".6"/>
+<circle cx="220" cy="22" r="9" fill="#fff" opacity=".4"/><circle cx="260" cy="46" r="11" fill="#fff" opacity=".4"/></g>
+<g opacity=".55"><path d="M820 40 Q740 50 680 30 Q640 22 600 35 Q570 42 540 30" stroke="#a8405a" stroke-width="3" fill="none" opacity=".5"/><path d="M680 30 Q670 10 660 5" stroke="#a8405a" stroke-width="2" fill="none" opacity=".4"/>
+<circle cx="680" cy="26" r="13" fill="#fff" opacity=".45"/><circle cx="683" cy="23" r="7" fill="#fce4ec" opacity=".6"/>
+<circle cx="600" cy="30" r="11" fill="#fff" opacity=".4"/><circle cx="540" cy="26" r="10" fill="#fff" opacity=".4"/></g>
+<g transform="translate(350,60)" opacity=".5"><path d="M0 0 Q-8-10-5-18 Q-2-22 0-15 Q2-22 5-18 Q8-10 0 0Z" fill="#f48fb1" opacity=".7"><animateTransform attributeName="transform" type="translate" values="0,0;20,-10;40,0;20,10;0,0" dur="8s" repeatCount="indefinite"/></path></g>
+<path d="M0 340 Q100 320 200 340 Q300 360 400 340 Q500 320 600 340 Q700 360 800 340 L800 360 L0 360Z" fill="rgba(253,246,240,.6)"/>
+</svg>
+<div class="header-title">四面八方</div>
+<div class="header-subtitle">成都 · 风管四室 · 2026年3月17日 星期二</div>
+<div class="header-weather">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.5"/><path d="M12 3V4M12 20V21M4 12H3M21 12H20" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+多云间晴 · 7~19℃ · 紫外线中等
+</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+<div class="section-header"><span class="section-icon">💰</span><span class="section-label">经济深度</span></div>
+<div class="section-title">1-2月经济"开门红"：工业增长6.3%，高技术制造业飙升13.1%</div>
+<div class="tags"><span class="tag">宏观经济</span><span class="tag">工业生产</span><span class="tag">新质生产力</span></div>
+<div class="svg-chart"><svg viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="440" height="200" rx="12" fill="#fef9f5"/>
+<text x="220" y="22" text-anchor="middle" font-size="12" fill="#7a6b6b" font-family="Noto Sans SC,sans-serif">2026年1-2月工业增加值同比增速（%）</text>
+<line x1="60" y1="170" x2="420" y2="170" stroke="#ddd" stroke-width="1"/>
+<line x1="60" y1="130" x2="420" y2="130" stroke="#f5f5f5" stroke-width="1" stroke-dasharray="4"/>
+<line x1="60" y1="90" x2="420" y2="90" stroke="#f5f5f5" stroke-width="1" stroke-dasharray="4"/>
+<line x1="60" y1="50" x2="420" y2="50" stroke="#f5f5f5" stroke-width="1" stroke-dasharray="4"/>
+<text x="50" y="174" text-anchor="end" font-size="10" fill="#aaa">0</text>
+<text x="50" y="134" text-anchor="end" font-size="10" fill="#aaa">5</text>
+<text x="50" y="94" text-anchor="end" font-size="10" fill="#aaa">10</text>
+<text x="50" y="54" text-anchor="end" font-size="10" fill="#aaa">15</text>
+<rect x="90" y="101" width="52" height="69" rx="4" fill="#f2c4ce"/><text x="116" y="96" text-anchor="middle" font-size="11" fill="#d4637a" font-weight="600">6.3</text><text x="116" y="188" text-anchor="middle" font-size="10" fill="#999">规上工业</text>
+<rect x="190" y="77" width="52" height="93" rx="4" fill="#d4637a"/><text x="216" y="72" text-anchor="middle" font-size="11" fill="#a8405a" font-weight="600">9.3</text><text x="216" y="188" text-anchor="middle" font-size="10" fill="#999">装备制造</text>
+<rect x="290" y="47" width="52" height="123" rx="4" fill="#a8405a"/><text x="316" y="42" text-anchor="middle" font-size="11" fill="#a8405a" font-weight="600">13.1</text><text x="316" y="188" text-anchor="middle" font-size="10" fill="#999">高技术制造</text>
+</svg></div>
+<p>昨日国新办发布的经济数据显示，今年前两个月主要指标全面回暖。其中最亮眼的信号来自制造业结构性跃升——高技术制造业增速达13.1%，是整体工业增速的两倍多。装备制造业同比增长9.3%，均显著快于整体6.3%的增速。</p>
+<p>从经济学视角看，这体现了典型的"结构性供给侧改善"：当传统产能在稳定区间运行时，新兴产业以更高边际产出拉动整体增速。这正是"新质生产力"从政策话语转化为实际产出的表征——投资结构从基建向高技术领域倾斜，叠加"逆周期+跨周期"调节的政策框架，形成正向投资乘数效应。</p>
+<p>对我们的启示：在全球面临地缘冲突引发的供给冲击和通胀压力时，中国制造业的结构性升级正成为经济韧性的核心支撑。关注装备制造、新能源、半导体等领域的长期机会。</p>
+<div class="source">📎 来源：国家统计局、证券时报、每日经济新闻</div>
+</div>
+
+<div class="card">
+<div class="section-header"><span class="section-icon">🚀</span><span class="section-label">科技解读</span></div>
+<div class="section-title">英伟达GTC 2026开幕：黄仁勋首发"Feynman"下一代AI芯片</div>
+<div class="tags"><span class="tag">人工智能</span><span class="tag">芯片</span><span class="tag">GTC大会</span></div>
+<div class="svg-chart"><svg viewBox="0 0 440 160" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="440" height="160" rx="12" fill="#f5f0fa"/>
+<text x="220" y="20" text-anchor="middle" font-size="11" fill="#7a6b6b" font-family="Noto Sans SC,sans-serif">英伟达AI芯片架构演进</text>
+<line x1="50" y1="80" x2="400" y2="80" stroke="#d1c4e9" stroke-width="2"/>
+<circle cx="90" cy="80" r="16" fill="#ce93d8" opacity=".6"/><text x="90" y="84" text-anchor="middle" font-size="9" fill="#fff" font-weight="600">Hopper</text><text x="90" y="108" text-anchor="middle" font-size="9" fill="#999">2023</text>
+<circle cx="170" cy="80" r="16" fill="#ab47bc" opacity=".7"/><text x="170" y="84" text-anchor="middle" font-size="8" fill="#fff" font-weight="600">Blackwell</text><text x="170" y="108" text-anchor="middle" font-size="9" fill="#999">2024</text>
+<circle cx="250" cy="80" r="18" fill="#8e24aa" opacity=".8"/><text x="250" y="77" text-anchor="middle" font-size="8" fill="#fff" font-weight="600">Vera</text><text x="250" y="88" text-anchor="middle" font-size="8" fill="#fff" font-weight="600">Rubin</text><text x="250" y="108" text-anchor="middle" font-size="9" fill="#999">2026</text>
+<circle cx="340" cy="80" r="22" fill="#6a1b9a"/><text x="340" y="77" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Feyn-</text><text x="340" y="88" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">man</text><text x="340" y="112" text-anchor="middle" font-size="9" fill="#d4637a" font-weight="700">🔥 NEW!</text>
+<polygon points="390,80 378,73 378,87" fill="#6a1b9a" opacity=".6"/>
+<text x="340" y="140" text-anchor="middle" font-size="10" fill="#999">台积电1.6nm工艺</text>
+</svg></div>
+<p>英伟达GTC 2026大会于当地时间3月16日在圣何塞开幕，CEO黄仁勋发表主题演讲。如此前预告，他展示了Vera Rubin平台最新进展，并首次揭幕代号"Feynman"的下一代核心芯片——将采用台积电1.6nm（A16）制程，引入超级电轨技术，是全球首款采用该尖端工艺的芯片产品。</p>
+<p>黄仁勋表示"AI不再是单一突破，而是必不可少的基础设施"。大会涵盖AI全栈超1000场分论坛。Feynman芯片预计2028年量产、2029年交付，但其亮相已提前锁定未来算力竞争制高点。</p>
+<p>对我们的影响：AI算力持续突破将加速大模型在各行各业落地——从智能客服到金融风控、从自动驾驶到医疗诊断。算力基础设施升级将深刻重塑工作方式和产业格局。</p>
+<div class="source">📎 来源：英伟达官网、环球网科技、证券时报</div>
+</div>
+
+<div class="card">
+<div class="section-header"><span class="section-icon">🏥</span><span class="section-label">健康生活</span></div>
+<div class="section-title">春季花粉高发季来了，过敏星人如何科学防护？</div>
+<div class="tags"><span class="tag">春季过敏</span><span class="tag">花粉症</span><span class="tag">实用建议</span></div>
+<div class="svg-chart"><svg viewBox="0 0 440 140" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="440" height="140" rx="12" fill="#f0faf4"/>
+<g transform="translate(55,70)"><circle cx="0" cy="-12" r="8" fill="#f8bbd0"/><circle cx="10" cy="-4" r="8" fill="#f8bbd0"/><circle cx="7" cy="8" r="8" fill="#f8bbd0"/><circle cx="-7" cy="8" r="8" fill="#f8bbd0"/><circle cx="-10" cy="-4" r="8" fill="#f8bbd0"/><circle cx="0" cy="0" r="6" fill="#ffeb3b"/><line x1="0" y1="15" x2="0" y2="45" stroke="#66bb6a" stroke-width="2.5"/></g>
+<circle cx="95" cy="35" r="2" fill="#fdd835" opacity=".5"/><circle cx="110" cy="50" r="1.5" fill="#fdd835" opacity=".4"/><circle cx="85" cy="60" r="2" fill="#fdd835" opacity=".6"/>
+<g transform="translate(160,55)"><path d="M0-30 L22-18 L22 5 Q22 25 0 33 Q-22 25-22 5 L-22-18Z" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2"/><text x="0" y="5" text-anchor="middle" font-size="18">🛡️</text></g>
+<g transform="translate(260,18)"><rect x="0" y="0" width="155" height="108" rx="10" fill="#fff" stroke="#c8e6c9" stroke-width="1"/>
+<text x="10" y="20" font-size="11" fill="#6bb38a" font-weight="600" font-family="Noto Sans SC,sans-serif">🌿 防护小贴士</text>
+<text x="10" y="40" font-size="10" fill="#555" font-family="Noto Sans SC,sans-serif">✅ 外出戴N95口罩</text>
+<text x="10" y="56" font-size="10" fill="#555" font-family="Noto Sans SC,sans-serif">✅ 回家换衣冲鼻腔</text>
+<text x="10" y="72" font-size="10" fill="#555" font-family="Noto Sans SC,sans-serif">✅ 关窗用空气净化器</text>
+<text x="10" y="88" font-size="10" fill="#555" font-family="Noto Sans SC,sans-serif">✅ 避开10点-14点外出</text>
+<text x="10" y="104" font-size="10" fill="#555" font-family="Noto Sans SC,sans-serif">✅ 提前服用抗过敏药</text>
+</g></svg></div>
+<p>三月中旬成都气温回暖、百花盛放，花粉浓度进入年度高峰。过敏性鼻炎和哮喘患者需格外注意防护。</p>
+<p>医学建议：外出佩戴有过滤功能的口罩，回家及时换衣并用生理盐水冲洗鼻腔；室内保持门窗关闭、开启空气净化器；花粉浓度通常在上午10点至下午2点最高，尽量避开此时段户外活动。有明确过敏史的朋友，可在花粉季前两周提前使用抗过敏药预防。饮食多摄入富含维C的蔬果，增强免疫力。</p>
+<div class="source">📎 来源：中国天气网、人民健康网</div>
+</div>
+
+<div class="card">
+<div class="section-header"><span class="section-icon">🌍</span><span class="section-label">国际透视</span></div>
+<div class="section-title">伊朗战事第18天：海峡局部松动，油价持续高位运行</div>
+<div class="tags"><span class="tag">中东局势</span><span class="tag">能源安全</span><span class="tag">地缘政治</span></div>
+<div class="svg-chart"><svg viewBox="0 0 440 130" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="440" height="130" rx="12" fill="#fef6f0"/>
+<g transform="translate(15,15)"><rect x="0" y="0" width="125" height="50" rx="8" fill="#ffebee"/>
+<text x="62" y="20" text-anchor="middle" font-size="10" fill="#c62828" font-family="Noto Sans SC,sans-serif">3月通航船只</text>
+<text x="62" y="42" text-anchor="middle" font-size="22" fill="#c62828" font-weight="700">77艘</text></g>
+<g transform="translate(155,15)"><rect x="0" y="0" width="125" height="50" rx="8" fill="#e8f5e9"/>
+<text x="62" y="20" text-anchor="middle" font-size="10" fill="#2e7d32" font-family="Noto Sans SC,sans-serif">去年同期</text>
+<text x="62" y="42" text-anchor="middle" font-size="22" fill="#2e7d32" font-weight="700">1229艘</text></g>
+<g transform="translate(295,15)"><rect x="0" y="0" width="125" height="50" rx="8" fill="#fff3e0"/>
+<text x="62" y="20" text-anchor="middle" font-size="10" fill="#e65100" font-family="Noto Sans SC,sans-serif">布伦特原油</text>
+<text x="62" y="42" text-anchor="middle" font-size="20" fill="#e65100" font-weight="700">$99+/桶</text></g>
+<text x="220" y="95" text-anchor="middle" font-size="11" fill="#999" font-family="Noto Sans SC,sans-serif">⚠️ 通航量同比骤降94%，全球能源市场承压</text>
+<text x="220" y="118" text-anchor="middle" font-size="10" fill="#bbb" font-family="Noto Sans SC,sans-serif">数据来源：英国劳埃德船舶信息社、路透</text>
+</svg></div>
+<p><strong>当前态势：</strong>自2月28日美以对伊朗发动军事打击以来，战事已持续18天。伊朗随即封锁霍尔木兹海峡，近日出现局部松动——印度、土耳其等国船只陆续获准通行，伊朗外长宣布海峡"对非敌对国家开放"。但3月通行量仅77艘，较去年同期骤降94%。</p>
+<p><strong>深层影响：</strong>国际油价突破100美元/桶关口，全球化肥原料供应面临减少30%-50%的风险，各国通胀压力陡增。美国临时放宽部分对俄石油制裁以缓解供给缺口。国际能源署警告全球石油市场正面临"史上最严重的供应梗阻"。</p>
+<p><strong>后续关注：</strong>伊朗提出两个停战条件——收回全部损失和美国撤离波斯湾。短期谈判前景不明。中方持续呼吁各方立即停止军事行动、避免局势进一步升级。</p>
+<div class="source">📎 来源：新华社、央视新闻、证券时报、国际能源署</div>
+</div>
+
+<div class="card">
+<div class="section-header"><span class="section-icon">🎬</span><span class="section-label">运动 · 娱乐热搜</span></div>
+<div class="section-title">《逐玉》双平台破万创纪录，冬残奥中国再夺金</div>
+<div class="tags"><span class="tag">热剧</span><span class="tag">冬残奥会</span><span class="tag">热搜</span></div>
+<div class="sub-title">🎭 热剧热议</div>
+<p><strong>《逐玉》</strong>持续霸榜！张凌赫、田曦薇主演的古装剧开播仅11天，腾讯视频热度破30000、爱奇艺热度破万，成为国产剧史上首部双平台联播双破万剧集。云合市占率突破41%，弹幕互动量破亿，Netflix全球同步播出，多国登顶。"数据真实性"争议也成社交平台焦点。</p>
+<p><strong>《好好的时光》</strong>梅婷、田雨主演的年代轻喜剧热度1.8W稳居第二；<strong>《太平年》</strong>白宇、周雨彤主演的历史大剧国际发行已覆盖73国。<strong>《我的山与海》</strong>谭松韵主演的都市女性励志剧也在热度榜前列。</p>
+<div class="source">📎 来源：电视猫热度榜、腾讯视频、快科技</div>
+<div class="sub-section"><div class="sub-title">⛷️ 运动热点</div>
+<p>米兰-科尔蒂纳冬残奥会赛事进行中，中国选手张雯静在高山滑雪女子回转（坐姿）项目中摘金，为中国代表团再添荣誉。</p>
+<div class="source">📎 来源：央视新闻</div></div>
+<div class="sub-section"><div class="sub-title">📱 社交热搜 TOP 5</div>
+<div class="hot-item"><span class="hot-rank r1">1</span><span>逐玉双平台破万 数据争议白热化 <span class="hot-platform">微博/抖音</span></span></div>
+<div class="hot-item"><span class="hot-rank r2">2</span><span>黄仁勋GTC发布Feynman芯片 <span class="hot-platform">微博</span></span></div>
+<div class="hot-item"><span class="hot-rank r3">3</span><span>苹果中国App Store佣金降至25% <span class="hot-platform">微博/小红书</span></span></div>
+<div class="hot-item"><span class="hot-rank r4">4</span><span>冬残奥张雯静高山滑雪夺金 <span class="hot-platform">微博</span></span></div>
+<div class="hot-item"><span class="hot-rank r5">5</span><span>马斯克"数字擎天柱"项目曝光 <span class="hot-platform">抖音/微博</span></span></div>
+</div></div>
+
+<div class="card">
+<div class="section-header"><span class="section-icon">📅</span><span class="section-label">节气故事</span></div>
+<div class="section-title">春分将至：昼夜平分，万物生长</div>
+<div class="tags"><span class="tag">春分</span><span class="tag">3月20日</span><span class="tag">养生</span></div>
+<div class="svg-chart"><svg viewBox="0 0 440 140" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="440" height="140" rx="12" fill="#fffbf0"/>
+<g transform="translate(100,70)"><circle cx="0" cy="0" r="45" fill="#263238"/><path d="M0-45 A45 45 0 0 1 0 45 Z" fill="#fff9c4"/><circle cx="0" cy="0" r="4" fill="#f44336"/>
+<text x="-22" y="5" font-size="10" fill="#f57f17" font-weight="600" font-family="Noto Sans SC,sans-serif">昼</text>
+<text x="12" y="5" font-size="10" fill="#e0e0e0" font-weight="600" font-family="Noto Sans SC,sans-serif">夜</text>
+<g transform="translate(-30,-30)"><circle cx="0" cy="0" r="7" fill="#ffd54f"/></g>
+<g transform="translate(30,30)"><circle cx="0" cy="0" r="6" fill="#e0e0e0"/><circle cx="3" cy="-2" r="6" fill="#263238"/></g></g>
+<text x="100" y="132" text-anchor="middle" font-size="10" fill="#999" font-family="Noto Sans SC,sans-serif">昼夜各12小时</text>
+<g transform="translate(225,20)"><rect x="0" y="0" width="180" height="105" rx="10" fill="#fff" stroke="#c8e6c9" stroke-width="1"/>
+<text x="14" y="20" font-size="12" fill="#6bb38a" font-weight="600" font-family="Noto Serif SC,serif">🌱 春分养生要点</text>
+<text x="14" y="42" font-size="11" fill="#555" font-family="Noto Sans SC,sans-serif">· 早睡早起，顺应阳气生发</text>
+<text x="14" y="60" font-size="11" fill="#555" font-family="Noto Sans SC,sans-serif">· 饮食清淡，多食时令蔬菜</text>
+<text x="14" y="78" font-size="11" fill="#555" font-family="Noto Sans SC,sans-serif">· 适度运动，踏青赏花舒畅</text>
+<text x="14" y="96" font-size="11" fill="#555" font-family="Noto Sans SC,sans-serif">· 调畅情志，保持心情愉悦</text></g>
+</svg></div>
+<p>3月20日即为春分，二十四节气中的第四个节气。太阳直射赤道，昼夜等长。古人云"春分者，阴阳相半也，故昼夜均而寒暑平"。从这天起北半球白昼渐长，气温稳步回升，万物进入蓬勃生长期。</p>
+<p>成都民间有"春分吃春菜"的习俗，野苋菜与鱼片滚汤谓之"春汤"，寓意阖家平安。此外春分前后正是踏青好时节——浣花溪桃花、新金牛公园玉兰、人民公园郁金香都已进入最佳观赏期。</p>
+<div class="source">📎 来源：中国天气网、中华传统文化</div>
+</div>
+
+<div class="card">
+<div class="section-header"><span class="section-icon">📍</span><span class="section-label">成都吃喝玩乐</span></div>
+<div class="section-title">本周推荐：双年展、悲鸿特展、赏花正当时</div>
+<div class="tags"><span class="tag">展览</span><span class="tag">赏花</span><span class="tag">糖酒会预告</span></div>
+<div class="activity-item"><div class="activity-name">🎨 烟火指数·成都双年展</div><div class="activity-meta">天府艺术公园·成都市美术馆 | 至8月30日 | 29国251位艺术家 <span class="activity-free">免费</span></div></div>
+<div class="activity-item"><div class="activity-name">🐴 天马行川——徐悲鸿艺术特展</div><div class="activity-meta">四川博物院 | 总估价约5亿元珍品 | 多件首次入蜀 <span class="activity-paid">购票</span></div></div>
+<div class="activity-item"><div class="activity-name">🏔️ 雪山之巅 大河之源——青藏高原文明展</div><div class="activity-meta">四川博物院临展厅 | 至4月12日 <span class="activity-free">免费</span></div></div>
+<div class="activity-item"><div class="activity-name">✨ 金线——从北非到东亚黄金服饰风尚特展</div><div class="activity-meta">成都博物馆 | 至3月29日 | 7家法国博物馆200余件 <span class="activity-free">免费</span></div></div>
+<div class="activity-item"><div class="activity-name">🌸 春日赏花推荐</div><div class="activity-meta">浣花溪桃花 · 新金牛公园玉兰 · 人民公园郁金香 · 文化公园绿梅</div></div>
+<div class="activity-item"><div class="activity-name">🍬 预告：第114届全国糖酒会</div><div class="activity-meta">西博城+世纪城全馆 | 3月26-28日 | 酒水食品行业盛会</div></div>
+<div class="source">📎 来源：成都本地宝、各场馆官网</div>
+</div>
+
+<div class="quote-card">
+<div style="font-size:28px;margin-bottom:8px">✨</div>
+<div class="quote-text">"春风如贵客，一到便繁华。"</div>
+<div class="quote-author">—— 清 · 袁枚</div>
+</div>
+
+<div class="footer">Ruonan的AI助理每日整理 · 四面八方 · 2026.03.17</div>
+<button class="save-btn" onclick="saveAsImage()">🌸 保存为图片</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script>
+function saveAsImage(){
+var btn=document.querySelector('.save-btn');btn.textContent='生成中...';btn.disabled=true;
+document.querySelectorAll('.petal').forEach(function(p){p.style.display='none'});
+document.fonts.ready.then(function(){
+return domtoimage.toBlob(document.body,{width:document.body.scrollWidth,height:document.body.scrollHeight,style:{overflow:'visible'},bgcolor:'#fdf6f0'});
+}).then(function(blob){
+document.querySelectorAll('.petal').forEach(function(p){p.style.display=''});
+btn.textContent='\uD83C\uDF38 保存为图片';btn.disabled=false;
+var file=new File([blob],'四面八方_20260317.png',{type:'image/png'});
+if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:'四面八方日报'})}
+else{var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='四面八方_20260317.png';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url)}
+}).catch(function(){
+document.querySelectorAll('.petal').forEach(function(p){p.style.display=''});
+btn.textContent='\uD83C\uDF38 保存为图片';btn.disabled=false;
+alert('自动截图失败，建议使用手机自带的长截图功能保存')});
+}
+</script>
+</body>
+</html>
